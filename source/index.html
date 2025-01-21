@@ -9,9 +9,51 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="main-header container">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="#" aria-current="page">
+          <picture>
+            <img class="main-header__logo-image" src="" alt="">
+          </picture>
+        </a>
+
+        <nav class="main-nav">
+          <div class="main-nav__list-wrapper">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню.</span>
+            </button>
+
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item"><a class="site-list__link" href="#" aria-current="page">Главная</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="#">Каталог</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="#">Доставка</a></li>
+              <li class="site-list__item"><a class="site-list__link" href="#">О нас</a></li>
+            </ul>
+          </div>
+
+          <ul class="main-nav__list main-nav__list--user user-list">
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--signin" href="#">
+                <span class="user-list__link-text">Войти</span>
+              </a>
+            </li>
+
+            <li class="user-list__item">
+              <a class="user-list__link user-list__link--cart" href="#">
+                <span class="user-list__link-text">Корзина</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <main>
-      <h1>Страница для старта</h1>
+
     </main>
+
+    <footer>
+
+    </footer>
   </body>
 </html>
