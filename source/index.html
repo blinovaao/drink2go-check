@@ -158,7 +158,7 @@
         </div>
       </section>
 
-      <section class="benefits">
+      <section class="benefits container">
         <div class="benefits__wrapper">
           <span class="benefits__sign section-sign">Преимущества</span>
           <h2 class="benefits__title section-title">Главные причины выбрать Drink2Go</h2>
@@ -186,6 +186,133 @@
           </ul>
         </div>
       </section>
+
+      <div class="catalog container">
+        <div class="catalog__wrapper">
+          <span class="catalog__sign section-sign">Каталог</span>
+          <h2 class="catalog__title">Каталог кофейных напитков</h2>
+
+          <section class="filter">
+            <div class="filter__wrapper">
+              <form class="filter__form filter-form" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter-form__group filter-form__group--range price-group">
+                  <legend class="filter-form__group-title price-group__title">Цена</legend>
+
+                  <div class="price-group__range range">
+                    <div class="range__container">
+                      <div class="range__base">
+                        <div class="range__content range__content--min">
+                          <button class="range__button range__button--min" type="button">
+                            <span class="visually-hidden">Минимальное значение.</span>
+                          </button>
+                        </div>
+
+                        <div class="range__content range__content--max">
+                          <button class="range__button range__button--max" type="button">
+                            <span class="visually-hidden">Максимальное значение.</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="range__fields">
+                      <label for="min">
+                        <input class="range__input" type="number" name="min" id="min" value="0" aria-label="Минимальное значение.">
+                        <span>-</span>
+                      </label>
+                      <label for="min">
+                        <input class="range__input" type="number" name="max" id="max" value="900" placeholder="900" aria-label="Максимальное значение.">
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="filter-form__group radio-group">
+                  <legend class="filter-form__group-title radio-group__title">Наличие молока</legend>
+
+                  <ul class="radio-group__list">
+                    <li class="radio-group__item radio">
+                      <label for="unimportant">
+                        <input class="radio__input" type="radio" name="milk" id="unimportant" value="unimportant" checked>
+                        <span class="radio__label">Неважно</span>
+                      </label>
+                    </li>
+
+                    <li class="radio-group__item radio">
+                      <label for="animal">
+                        <input class="radio__input" type="radio" name="milk" id="animal" value="animal">
+                        <span class="radio__label">Только животное</span>
+                      </label>
+                    </li>
+
+                    <li class="radio-group__item radio">
+                      <label for="plant">
+                        <input class="radio__input" type="radio" name="milk" id="plant" value="plant">
+                        <span class="radio__label">Только растительное</span>
+                      </label>
+                    </li>
+
+                    <li class="radio-group__item radio radio--disabled">
+                      <label for="without">
+                        <input class="radio__input" type="radio" name="milk" id="without" value="without" disabled>
+                        <span class="radio__label">Без молока</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+
+                <fieldset class="filter-form__group check-group">
+                  <legend class="filter-form__group-title check-group__title">Страна произрастания</legend>
+
+                  <ul class="check-group__list">
+                    <li class="check-group__item checkbox">
+                      <label for="Brazil">
+                        <input class="checkbox__input" type="checkbox" name="country" id="Brazil" value="Brazil" checked>
+                        <span class="checkbox__label">Бразилия</span>
+                      </label>
+                    </li>
+
+                    <li class="check-group__item checkbox">
+                      <label for="Ethiopia">
+                        <input class="checkbox__input" type="checkbox" name="country" id="Ethiopia" value="Ethiopia" >
+                        <span class="checkbox__label">Эфиопия</span>
+                      </label>
+                    </li>
+
+                    <li class="check-group__item checkbox">
+                      <label for="Columbia">
+                        <input class="checkbox__input" type="checkbox" name="country" id="Columbia" value="Columbia" >
+                        <span class="checkbox__label">Колумбия</span>
+                      </label>
+                    </li>
+
+                    <li class="check-group__item checkbox">
+                      <label for="Costa-Rica">
+                        <input class="checkbox__input" type="checkbox" name="country" id="Costa-Rica" value="Costa-Rica" >
+                        <span class="checkbox__label">Коста-Рика</span>
+                      </label>
+                    </li>
+
+                    <li class="check-group__item checkbox checkbox--disabled">
+                      <label for="Peru">
+                        <input class="checkbox__input" type="checkbox" name="country" id="Peru" value="Peru" disabled>
+                        <span class="checkbox__label">Перу</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+
+                <div class="filter-form__buttons">
+                  <button class="filter-form__button button button--primary" type="submit">Применить</button>
+                  <button class="filter-form__button button button--secondary" type="reset">Сбросить</button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          section.
+        </div>
+      </div>
     </main>
 
     <footer>
