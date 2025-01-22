@@ -1,0 +1,23 @@
+.user-list__link {
+  text-decoration: none;
+
+  display: block;
+  padding: 30px;
+
+  mask-repeat: no-repeat;
+  mask-size: 16px 16px;
+  mask-position: center;
+  background-color: $base-black;
+
+  &--cart {
+    mask-image: url("../../icons/stack.svg#cart");
+  }
+
+  &--signin {
+    mask-image: url("../../icons/stack.svg#user");
+  }
+}
+
+.user-list__link-text {
+  display: none;
+}

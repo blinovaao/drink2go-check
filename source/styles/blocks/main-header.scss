@@ -1,0 +1,23 @@
+.main-header {
+  background-color: $base-white;
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 0 0 20px;
+
+  position: relative;
+}
+
+.main-header__logo {
+  margin: 4px 0 0;
+}
+
+.main-header__logo-text {
+  margin: 0;
+
+  display: none;
+}

@@ -9,7 +9,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="main-header container">
+    <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="#" aria-current="page">
           <picture>
@@ -27,7 +27,7 @@
               <span class="visually-hidden">Открыть меню.</span>
             </button>
 
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list main-nav__list--site site-list">
               <li class="site-list__item"><a class="site-list__link" href="#" aria-current="page">Главная</a></li>
               <li class="site-list__item"><a class="site-list__link" href="#">Каталог</a></li>
               <li class="site-list__item"><a class="site-list__link" href="#">Доставка</a></li>
@@ -520,7 +520,13 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__map map">
           <picture>
-            <img class="map__image" src="" alt="">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
+            <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="320" height="420">
+
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="540">
+            <source type="image/jpg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="480">
+            <img class="map__image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="420" alt="Карта с местоположением офиса магазина.">
           </picture>
         </div>
 

@@ -1,0 +1,39 @@
+.main-nav {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.main-nav__toggle {
+  border: none;
+
+  padding: 30px;
+
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#burger-toggle");
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.main-nav__toggle--opened {
+  background-image: url("../../icons/stack.svg#cross");
+}
+
+.main-nav__list {
+  @include list-style;
+
+  &--site {
+    display: none;
+  }
+
+  &--user {
+    display: flex;
+  }
+
+  &--opened {
+    position: absolute;
+    left: 0;
+
+    display: flex;
+  }
+}
