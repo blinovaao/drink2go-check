@@ -1,0 +1,18 @@
+.footer-site-list {
+  @include list-style;
+}
+
+.footer-site-list__item:not(:last-of-type) {
+  margin: 0 0 16px;
+}
+
+.footer-site-list__link {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: $base-black;
+}

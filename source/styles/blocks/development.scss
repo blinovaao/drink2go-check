@@ -1,0 +1,41 @@
+.development {
+  padding: 20px 0 30px;
+}
+
+.development__text {
+  color: $base-grey;
+
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.development__link {
+  color: $base-grey;
+
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.development__link:hover,
+.development__link:focus-visible {
+  color: $base-primary;
+}
+
+.development__link:active {
+  color: $primary-darker;
+}

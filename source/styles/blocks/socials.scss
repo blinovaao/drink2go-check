@@ -1,0 +1,33 @@
+.socials {
+  @include list-style;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.socials__link {
+  display: inline-block;
+
+  padding: 20px;
+
+  mask-size: 20px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  background-color: $base-grey;
+
+  &--vk {
+    mask-image: url("../../icons/stack.svg#social-vk");
+  }
+
+  &--pinterest {
+    mask-image: url("../../icons/stack.svg#social-pinterest");
+    mask-size: 22px;
+  }
+
+  &--ok {
+    mask-image: url("../../icons/stack.svg#social-ok");
+  }
+}
