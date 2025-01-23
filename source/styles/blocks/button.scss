@@ -46,6 +46,7 @@
 .button--secondary:hover,
 .button--secondary:focus-visible {
   background-color: $primary-lighter;
+  color: $base-white;
 
   outline: none;
 }

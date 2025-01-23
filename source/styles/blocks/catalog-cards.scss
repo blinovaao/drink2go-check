@@ -1,0 +1,69 @@
+.catalog-cards {
+  @include list-style;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.catalog-cards__item {
+  background-color: $base-white;
+
+  padding: 40px 20px 20px;
+}
+
+.catalog-cards__link {
+  text-decoration: none;
+
+  color: $base-black;
+}
+
+.catalog-cards__image {
+  display: block;
+
+  margin: 0 auto 24px;
+}
+
+.catalog-cards__text {
+  text-align: left;
+}
+
+.catalog-cards__title {
+  margin: 0 0 4px;
+
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.catalog-cards__description {
+  margin: 0 0 16px;
+}
+
+.catalog-cards__order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-cards__price {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.catalog-cards__button {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  &--cart {
+    padding: 8px 20px 8px 46px;
+
+    background-image: url("../../icons/stack.svg#add-cart");
+    background-repeat: no-repeat;
+    background-size: 20px 16px;
+    background-position: top 50% left 20px;
+  }
+}

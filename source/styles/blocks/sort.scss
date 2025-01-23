@@ -1,0 +1,38 @@
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 0 0 2px;
+}
+
+.sort__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.sort__select {
+  border: none;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+
+  color: $base-primary;
+
+  background-color: transparent;
+  background-image: url("../../icons/stack.svg#arrow-purple-down");
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: top 50% right 7px;
+
+  appearance: none;
+
+  width: 152px;
+
+  box-sizing: border-box;
+
+  padding: 0 10px 0 0;
+}
