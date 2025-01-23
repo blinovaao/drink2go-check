@@ -1,0 +1,46 @@
+.benefits__wrapper {
+  padding: 46px 0 60px;
+
+  text-align: center;
+}
+
+.benefits__sign {
+  margin: 0 0 6px;
+}
+
+.benefits__title {
+  margin: 0 0 36px;
+}
+
+.benefits__list {
+  @include list-style;
+
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+.benefits__item {
+  &--speed {
+    background-image: url("../../icons/stack.svg#benefit-speed");
+  }
+
+  &--fit {
+    background-image: url("../../icons/stack.svg#benefit-fit");
+
+    & .benefit__description {
+      max-width: 235px;
+    }
+  }
+
+  &--energy {
+    background-image: url("../../icons/stack.svg#benefit-energy");
+  }
+
+  &--eco {
+    background-image: url("../../icons/stack.svg#benefit-eco");
+  }
+}

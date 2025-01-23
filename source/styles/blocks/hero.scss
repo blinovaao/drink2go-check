@@ -1,0 +1,17 @@
+.hero {
+  &--bg-1 {
+    background-color: $flat-white;
+  }
+
+  &--bg-2 {
+    background-color: $lavender-latte;
+  }
+
+  &--bg-3 {
+    background-color: $espresso;
+  }
+}
+
+.hero__wrapper {
+  padding: 0 20px;
+}
