@@ -1,0 +1,7 @@
+.check-group__list {
+  @include list-style;
+}
+
+.check-group__item:not(:last-of-type) {
+  margin: 0 0 20px;
+}

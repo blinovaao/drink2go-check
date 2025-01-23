@@ -1,0 +1,7 @@
+.radio-group__list {
+  @include list-style;
+}
+
+.radio-group__item:not(:last-of-type) {
+  margin: 0 0 20px;
+}

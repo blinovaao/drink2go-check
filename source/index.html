@@ -207,10 +207,10 @@
         </div>
       </section>
 
-      <div class="catalog container">
+      <div class="catalog">
         <div class="catalog__wrapper">
           <span class="catalog__sign section-sign">Каталог</span>
-          <h2 class="catalog__title">Каталог кофейных напитков</h2>
+          <h2 class="catalog__title section-title">Каталог кофейных напитков</h2>
 
           <section class="filter">
             <div class="filter__wrapper">
@@ -236,18 +236,17 @@
                     </div>
 
                     <div class="range__fields">
-                      <label for="min">
-                        <input class="range__input" type="number" name="min" id="min" value="0" aria-label="Минимальное значение.">
-                        <span>-</span>
+                      <label class="range__field range__field--min" for="min">
+                        <input class="range__input" type="number" name="min" id="min" placeholder="0" aria-label="Минимальное значение.">
                       </label>
-                      <label for="min">
-                        <input class="range__input" type="number" name="max" id="max" value="900" placeholder="900" aria-label="Максимальное значение.">
+                      <label class="range__field range__field--max" for="max">
+                        <input class="range__input" type="number" name="max" id="max" value="900" aria-label="Максимальное значение.">
                       </label>
                     </div>
                   </div>
                 </fieldset>
 
-                <fieldset class="filter-form__group radio-group">
+                <fieldset class="filter-form__group filter-form__group--radio radio-group">
                   <legend class="filter-form__group-title radio-group__title">Наличие молока</legend>
 
                   <ul class="radio-group__list">
@@ -281,7 +280,7 @@
                   </ul>
                 </fieldset>
 
-                <fieldset class="filter-form__group check-group">
+                <fieldset class="filter-form__group filter-form__group--check check-group">
                   <legend class="filter-form__group-title check-group__title">Страна произрастания</legend>
 
                   <ul class="check-group__list">
