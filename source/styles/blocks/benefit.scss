@@ -4,6 +4,14 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 52px 56px;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 0 72px;
+
+    background-position: top left;
+
+    text-align: left;
+  }
 }
 
 .benefit__title {
@@ -13,8 +21,20 @@
   line-height: 32px;
   text-align: center;
   font-weight: 700;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 10px;
+    
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+  }
 }
 
 .benefit__description {
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }

@@ -1,3 +1,12 @@
+.footer-nav {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 30px;
+  }
+}
+
 .footer-nav__social {
   padding: 20px 0 17px;
 
@@ -19,6 +28,16 @@
     bottom: 0;
     left: -20px;
   }
+
+  @media (min-width: $tablet) {
+    padding: 40px 0 17px;
+
+    grid-area: 1 / 1 / 2 / -1;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .footer-nav__logo-text {
@@ -34,6 +53,10 @@
   font-weight: 700;
 
   color: $base-primary;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 15px;
+  }
 }
 
 .footer-nav__eshop {
@@ -53,6 +76,14 @@
     bottom: 0;
     left: -20px;
   }
+
+  @media (min-width: $tablet) {
+    padding: 6px 0 0;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .footer-nav__media {
@@ -71,6 +102,14 @@
 
     bottom: 0;
     left: -20px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 6px 0 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -92,8 +131,20 @@
     left: -20px;
   }
 
+  @media (min-width: $tablet) {
+    padding: 6px 0 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
   & .footer-nav__title {
     margin: 0 0 19px;
+
+    @media (min-width: $tablet) {
+      margin: 0 0 20px;
+    }
   }
 }
 
@@ -119,10 +170,19 @@
 
 .footer-nav__item:not(:last-of-type) {
   margin: 0 0 16px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 15px;
+  }
 }
 
 .footer-nav__link {
   color: $base-black;
 
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

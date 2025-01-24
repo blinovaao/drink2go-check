@@ -1,14 +1,29 @@
 .hero {
   &--bg-1 {
     background-color: $flat-white;
+
+    @media (min-width: $tablet) {
+      background-color: unset;
+      background-image: linear-gradient(to bottom, $flat-white calc(100% - 194px), $base-white calc(100% - 194px));
+    }
   }
 
   &--bg-2 {
     background-color: $lavender-latte;
+
+    @media (min-width: $tablet) {
+      background-color: unset;
+      background-image: linear-gradient(to bottom, $lavender-latte calc(100% - 194px), $base-white calc(100% - 194px));
+    }
   }
 
   &--bg-3 {
     background-color: $espresso;
+
+    @media (min-width: $tablet) {
+      background-color: unset;
+      background-image: linear-gradient(to bottom, $espresso calc(100% - 194px), $base-white calc(100% - 194px));
+    }
   }
 }
 

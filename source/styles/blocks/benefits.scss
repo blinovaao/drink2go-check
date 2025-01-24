@@ -2,14 +2,26 @@
   padding: 46px 0 60px;
 
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 48px 0 100px;
+  }
 }
 
 .benefits__sign {
   margin: 0 auto 6px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto 4px;
+  }
 }
 
 .benefits__title {
   margin: 0 auto 36px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto 60px;
+  }
 }
 
 .benefits__list {
@@ -21,6 +33,14 @@
 
   margin: 0 auto;
   max-width: 280px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+
+    max-width: 708px;
+  }
 }
 
 .benefits__item {
@@ -42,5 +62,11 @@
 
   &--eco {
     background-image: url("../../icons/stack.svg#benefit-eco");
+  }
+}
+
+@media (min-width: $tablet) {
+  .benefits__item--fit .benefit__description {
+    max-width: unset;
   }
 }

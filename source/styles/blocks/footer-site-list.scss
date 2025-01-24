@@ -4,6 +4,10 @@
 
 .footer-site-list__item:not(:last-of-type) {
   margin: 0 0 16px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 12px;
+  }
 }
 
 .footer-site-list__link {

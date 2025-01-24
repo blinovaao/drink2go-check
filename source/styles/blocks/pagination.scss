@@ -1,8 +1,11 @@
 .pagination {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 20px;
+
+  @media (min-width: $tablet) {
+    justify-content: end;
+  }
 }
 
 .pagination__list {
@@ -37,25 +40,44 @@
   &--next {
     transform: rotate(-90deg);
   }
+
+  @media (min-width: $tablet) {
+    width: unset;
+
+    background-image: unset;
+
+    &--prev {
+      transform: none;
+
+      padding: 9px 20px;
+    }
+
+    &--next {
+      transform: none;
+
+      padding: 9px 20px 9px 21px;
+    }
+  }
+}
+
+.pagination__button-text {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+
+    letter-spacing: 1.3px;
+  }
 }
 
 .pagination__link {
-  font-size: 16px;
-  line-height: 24px;
-  text-decoration: none;
-
-  color: $base-primary;
-  background-color: $base-white;
-
-  display: inline-block;
-
   box-sizing: border-box;
 
   min-width: 40px;
 
-  border-radius: 4px;
-
   padding: 8px;
+
+  letter-spacing: 1.3px;
 
   &--current {
     font-weight: 600;

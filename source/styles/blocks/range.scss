@@ -11,6 +11,10 @@
   position: relative;
 
   margin: 0 0 36px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 32px;
+  }
 }
 
 .range__base {
@@ -24,6 +28,10 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+
+  @media (min-width: $tablet) {
+    width: 184px;
+  }
 }
 
 .range__button {
@@ -80,6 +88,11 @@
     right: -26px;
 
     transform: translateY(-50%);
+
+    @media (min-width: $tablet) {
+      top: 50%;
+      right: -27px;
+    }
   }
 }
 
@@ -102,5 +115,11 @@
 
   &::placeholder {
     color: $base-grey;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 7px 10px 6px;
+
+    max-width: 87px;
   }
 }

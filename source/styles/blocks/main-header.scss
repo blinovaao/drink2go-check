@@ -18,6 +18,10 @@
 
 .main-header__logo {
   margin: 4px 0 0;
+
+  @media (min-width: $tablet) {
+    margin: 6px 0 0;
+  }
 }
 
 .main-header__logo-text {
