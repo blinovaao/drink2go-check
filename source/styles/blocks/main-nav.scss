@@ -1,6 +1,11 @@
 .main-nav {
   display: flex;
+  align-items: center;
   flex-direction: row-reverse;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
 }
 
 .main-nav__toggle {
@@ -13,6 +18,10 @@
   background-position: center;
   background-size: 16px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-nav__toggle--opened {
@@ -37,5 +46,13 @@
     display: flex;
 
     z-index: 10;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+
+    &--user {
+      margin: 0 0 0 60px;
+    }
   }
 }
