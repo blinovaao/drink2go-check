@@ -17,7 +17,13 @@
 }
 
 .slider__image-wrapper {
-  margin: 0 0 2px;
+  margin: 0 0 7px;
+}
+
+.slider__image {
+  display: block;
+
+  margin: 0 auto;
 }
 
 .slider__content {
@@ -29,17 +35,21 @@
 }
 
 .slider__title {
-  margin: 0 0 10px;
+  margin: 0 auto 10px;
 
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.2vw;
   font-weight: 700;
   text-transform: capitalize;
+
+  max-width: 348px;
 }
 
 .slider__description {
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
+
+  max-width: 278px;
 }
 
 .slider__order-wrapper {
