@@ -1,0 +1,17 @@
+.main-footer__container {
+  padding: 0 20px;
+}
+
+.main-footer__navigation {
+  max-width: 280px;
+
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    max-width: 728px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1360px;
+  }
+}

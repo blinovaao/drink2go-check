@@ -14,6 +14,7 @@
 
 .sort__select {
   border: none;
+  border-radius: 4px;
 
   font-size: 16px;
   line-height: 24px;
@@ -26,15 +27,30 @@
   background-image: url("../../icons/stack.svg#arrow-purple-down");
   background-repeat: no-repeat;
   background-size: 10px 10px;
-  background-position: top 50% right 7px;
+  background-position: top 50% right 9px;
 
   appearance: none;
 
   cursor: pointer;
 
-  width: 152px;
+  width: 165px;
 
   box-sizing: border-box;
 
-  padding: 0 10px 0 0;
+  padding: 4px 10px 4px 12px;
 }
+
+.sort__select:hover,
+.sort__select:focus-visible {
+  outline: none;
+
+  background-color: $base-secondary;
+}
+
+.sort__select:active,
+.sort__select:focus-within {
+  background-image: url("../../icons/stack.svg#arrow-purple-up");
+
+  background-color: transparent;
+}
+

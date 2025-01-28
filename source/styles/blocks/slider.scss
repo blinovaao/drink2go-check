@@ -18,11 +18,21 @@
   @media (min-width: $tablet) {
     padding: 54px 0 0;
 
-    display: none;
     flex-direction: column-reverse;
 
     &--current {
       display: flex;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 30px 0 77px;
+
+    grid-template-columns: 655px 625px;
+    justify-content: center;
+
+    &--current {
+      display: grid;
     }
   }
 }
@@ -35,10 +45,28 @@
   display: block;
 
   margin: 0 auto;
+
+  max-width: 280px;
+
+  @media (min-width: $tablet) {
+    max-width: 728px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 655px;
+  }
 }
 
 .slider__content {
   text-align: center;
+
+  @media (min-width: $desktop) {
+    text-align: left;
+
+    align-self: center;
+
+    margin: -20px 0 0;
+  }
 }
 
 .slider__note {
@@ -54,7 +82,7 @@
   font-weight: 700;
   text-transform: capitalize;
 
-  max-width: 348px;
+  max-width: 340px;
 
   @media (min-width: $tablet) {
     margin: 0 auto 16px;
@@ -64,6 +92,10 @@
     letter-spacing: 1.1px;
 
     max-width: 600px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 16px;
   }
 }
 
@@ -78,6 +110,10 @@
     font-size: 20px;
     line-height: 32px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 40px;
+  }
 }
 
 .slider__order-wrapper {
@@ -90,6 +126,10 @@
 
   @media (min-width: $tablet) {
     margin: 0 auto 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
 
@@ -134,6 +174,8 @@
 
   top: 0;
 
+  cursor: pointer;
+
   &--prev {
     left: 0;
   }
@@ -149,8 +191,71 @@
 
     background-position: top 310px center;
   }
+
+  @media (min-width: $desktop) {
+    background-position: center;
+  }
+}
+
+.slider__button:hover,
+.slider__button:focus-visible {
+  outline: none;
+
+  @media (min-width: $desktop) {
+    background-image: url("../../icons/stack.svg#arrow-purple-left"), linear-gradient(to left, transparent, $base-white);
+    background-position: center, center;
+    background-size: 20px 20px, cover;
+  }
+}
+
+.slider__button:active {
+  -webkit-tap-highlight-color: transparent;
+
+  @media (min-width: $desktop) {
+    background-image: url("../../icons/stack.svg#arrow-purple-left"), linear-gradient(to left, transparent, rgb(120, 89, 207, 0.25));
+    background-position: center, center;
+    background-size: 20px 20px, cover;
+  }
+}
+
+.slider__button--next:hover,
+.slider__button--next:focus-visible {
+  @media (min-width: $desktop) {
+    background-image: url("../../icons/stack.svg#arrow-purple-right"), linear-gradient(to right, transparent, $base-white);
+  }
+}
+
+.slider__button--next:active {
+  @media (min-width: $desktop) {
+    background-image: url("../../icons/stack.svg#arrow-purple-right"), linear-gradient(to right, transparent, rgb(120, 89, 207, 0.25));
+  }
+}
+
+.slider__button:disabled {
+  @media (min-width: $desktop) {
+    pointer-events: none;
+
+    background-image: url("../../icons/stack.svg#arrow-grey-left");
+  }
+}
+
+.slider__button--next:disabled {
+  @media (min-width: $desktop) {
+    transform: rotate(180deg);
+  }
 }
 
 .slider__pagination {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+
+    position: absolute;
+
+    bottom: 64px;
+    left: 50%;
+
+    transform: translateX(-50%);
+  }
 }

@@ -20,3 +20,14 @@
 
   color: $base-black;
 }
+
+.footer-site-list__link:hover,
+.footer-site-list__link:focus-visible {
+  color: $primary-lighter;
+
+  outline: none;
+}
+
+.footer-site-list__link:active {
+  color: $primary-darker;
+}

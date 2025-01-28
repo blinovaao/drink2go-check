@@ -6,7 +6,22 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    padding: 73px 20px 90px;
+    padding: 73px 20px 88px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 94px 20px 118px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: $tablet) {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1360px;
   }
 }
 
@@ -16,4 +31,16 @@
 
 .catalog__title {
   margin: 0 auto 20px;
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 40px;
+  }
+}
+
+.catalog__inner {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    gap: 30px;
+  }
 }

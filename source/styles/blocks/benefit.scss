@@ -12,6 +12,14 @@
 
     text-align: left;
   }
+
+  @media (min-width: $desktop) {
+    padding: 76px 0 0;
+
+    background-position: top center;
+
+    text-align: center;
+  }
 }
 
 .benefit__title {
@@ -24,10 +32,14 @@
 
   @media (min-width: $tablet) {
     margin: 0 0 10px;
-    
+
     font-size: 24px;
     line-height: 36px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
   }
 }
 

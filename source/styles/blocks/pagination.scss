@@ -21,7 +21,7 @@
   display: inline-block;
 
   width: 40px;
-  height: 40px;
+  min-height: 40px;
 
   background-color: $base-white;
 
@@ -58,6 +58,12 @@
       padding: 9px 20px 9px 21px;
     }
   }
+
+  @media (min-width: $desktop) {
+    &--prev {
+      padding: 9px 19px;
+    }
+  }
 }
 
 .pagination__button-text {
@@ -84,5 +90,7 @@
 
     background-color: transparent;
     color: $base-black;
+
+    pointer-events: none;
   }
 }

@@ -1,27 +1,92 @@
+.user-list {
+  max-width: 180px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  @media (min-width: $tablet) {
+    max-width: 180px;
+  }
+
+  @media (min-width: $desktop) {
+    gap: 20px;
+
+    max-width: 400px;
+  }
+}
+
 .user-list__link {
+  color: $base-black;
+
   text-decoration: none;
 
   display: block;
   padding: 30px;
 
-  mask-repeat: no-repeat;
-  mask-size: 16px 16px;
-  mask-position: center;
-  background-color: $base-black;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
 
   @media (min-width: $tablet) {
     padding: 40px 30px;
   }
 
+  @media (min-width: $desktop) {
+    padding: 27px 20px 29px 44px;
+
+    background-position: top 50% left 20px;
+  }
+
   &--cart {
-    mask-image: url("../../icons/stack.svg#cart");
+    background-image: url("../../icons/stack.svg#cart");
   }
 
   &--signin {
-    mask-image: url("../../icons/stack.svg#user");
+    background-image: url("../../icons/stack.svg#user");
   }
+}
+
+.user-list__link:hover,
+.user-list__link:focus-visible {
+  color: $base-primary;
+
+  outline: none;
+}
+
+.user-list__link--cart:hover,
+.user-list__link--cart:focus-visible,
+.user-list__link--cart:active {
+  @media (min-width: $desktop) {
+    background-image: url("../../icons/stack.svg#cart-color");
+  }
+}
+
+.user-list__link--signin:hover,
+.user-list__link--signin:focus-visible,
+.user-list__link--signin:active {
+  @media (min-width: $desktop) {
+    background-image: url("../../icons/stack.svg#user-color");
+  }
+}
+
+.user-list__link:active {
+  -webkit-tap-highlight-color: transparent;
+
+  color: $base-primary;
+  background-color: $base-secondary;
 }
 
 .user-list__link-text {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 }

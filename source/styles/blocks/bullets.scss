@@ -1,0 +1,41 @@
+.bullets {
+  @include list-style;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bullets__button {
+  @media (min-width: $desktop) {
+    background-color: $base-white;
+
+    border: none;
+
+    padding: 0;
+
+    width: 62px;
+    height: 4px;
+
+    cursor: pointer;
+
+    &--current {
+      background-color: $base-primary;
+    }
+  }
+}
+
+.bullets__button:hover,
+.bullets__button:focus-visible {
+  @media (min-width: $desktop) {
+    background-color: rgb(120, 89, 207, 0.25);
+
+    outline: none;
+  }
+}
+
+.bullets__button:active {
+  @media (min-width: $desktop) {
+    background-color: $base-primary;
+  }
+}

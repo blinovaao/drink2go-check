@@ -60,6 +60,7 @@
 .button--secondary:disabled,
 .button--secondary.button--disabled {
   background-color: $primary-light-grey;
+  color: $base-white;
 
   pointer-events: none;
 }

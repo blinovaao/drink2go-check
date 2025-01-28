@@ -5,6 +5,8 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 }
 
@@ -22,6 +24,10 @@
   @media (min-width: $tablet) {
     display: none;
   }
+}
+
+.main-nav__toggle:active {
+  background-color: $base-secondary;
 }
 
 .main-nav__toggle--opened {
@@ -50,9 +56,5 @@
 
   @media (min-width: $tablet) {
     display: flex;
-
-    &--user {
-      margin: 0 0 0 60px;
-    }
   }
 }

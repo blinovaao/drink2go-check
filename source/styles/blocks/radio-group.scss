@@ -1,5 +1,7 @@
 .radio-group__list {
   @include list-style;
+
+  padding: 0 0 0 2px;
 }
 
 .radio-group__item:not(:last-of-type) {

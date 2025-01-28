@@ -10,6 +10,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .catalog-cards__item {
@@ -17,15 +21,35 @@
 
   padding: 40px 20px 20px;
 
+  border-radius: 4px;
+
   @media (min-width: $tablet) {
     padding: 50px 30px 30px;
   }
+}
+
+.catalog-cards__item:hover,
+.catalog-cards__item:focus-visible {
+  outline: none;
+
+  box-shadow: 0 5px 15px 0 rgb(0, 0, 0, 0.15);
 }
 
 .catalog-cards__link {
   text-decoration: none;
 
   color: $base-black;
+}
+
+.catalog-cards__link:hover,
+.catalog-cards__link:focus-visible {
+  outline: none;
+
+  opacity: 0.8;
+}
+
+.catalog-cards__link:active {
+  opacity: 0.6;
 }
 
 .catalog-cards__image {
@@ -95,3 +119,4 @@
     background-position: top 50% left 20px;
   }
 }
+

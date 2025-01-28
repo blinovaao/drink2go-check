@@ -4,6 +4,10 @@
   @media (min-width: $tablet) {
     padding: 36px 0 40px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 24px 0 40px;
+  }
 }
 
 .development__text {
@@ -38,6 +42,8 @@
 .development__link:hover,
 .development__link:focus-visible {
   color: $base-primary;
+
+  outline: none;
 }
 
 .development__link:active {

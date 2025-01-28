@@ -6,6 +6,11 @@
       background-color: unset;
       background-image: linear-gradient(to bottom, $flat-white calc(100% - 194px), $base-white calc(100% - 194px));
     }
+
+    @media (min-width: $desktop) {
+      background-color: $flat-white;
+      background-image: none;
+    }
   }
 
   &--bg-2 {
@@ -14,6 +19,11 @@
     @media (min-width: $tablet) {
       background-color: unset;
       background-image: linear-gradient(to bottom, $lavender-latte calc(100% - 194px), $base-white calc(100% - 194px));
+    }
+
+    @media (min-width: $desktop) {
+      background-color: $lavender-latte;
+      background-image: none;
     }
   }
 
@@ -24,9 +34,25 @@
       background-color: unset;
       background-image: linear-gradient(to bottom, $espresso calc(100% - 194px), $base-white calc(100% - 194px));
     }
+
+    @media (min-width: $desktop) {
+      background-color: $espresso;
+      background-image: none;
+    }
   }
 }
 
 .hero__wrapper {
   padding: 0 20px;
+  margin: 0 auto;
+
+  max-width: 280px;
+
+  @media (min-width: $tablet) {
+    max-width: 728px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1400px;
+  }
 }
