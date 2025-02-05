@@ -55,11 +55,13 @@
 
 .checkbox__input:hover,
 .checkbox__input:focus-visible {
-  outline: none;
+  @media (min-width: $desktop) {
+    outline: none;
 
-  border-color: $primary-lighter;
+    border-color: $primary-lighter;
 
-  background-color: rgb(120, 89, 207, 0.25);
+    background-color: rgb(120, 89, 207, 0.25);
+  }
 }
 
 .checkbox__input:disabled {
