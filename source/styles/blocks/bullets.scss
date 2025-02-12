@@ -8,6 +8,10 @@
   max-height: 4px;
 }
 
+.bullets__item {
+  max-height: 4px;
+}
+
 .bullets__button {
   @media (min-width: $desktop) {
     background-color: $base-white;
